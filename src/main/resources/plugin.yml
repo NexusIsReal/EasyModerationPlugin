@@ -1,0 +1,62 @@
+name: EasyModeration
+version: '${project.version}'
+main: com.easymoderation.EasyModeration
+api-version: '1.20'
+authors: [YourName]
+description: A simple moderation plugin for Minecraft servers
+commands:
+  kick:
+    description: Kick a player from the server
+    usage: /kick <player> [reason]
+    permission: easymod.kick
+  ban:
+    description: Ban a player from the server
+    usage: /ban <player> [reason]
+    permission: easymod.ban
+  tempban:
+    description: Temporarily ban a player from the server
+    usage: /tempban <player> <duration> [reason]
+    permission: easymod.tempban
+  mute:
+    description: Mute a player
+    usage: /mute <player> [duration] [reason]
+    permission: easymod.mute
+  unmute:
+    description: Unmute a player
+    usage: /unmute <player>
+    permission: easymod.unmute
+  warn:
+    description: Warn a player
+    usage: /warn <player> <reason>
+    permission: easymod.warn
+  freeze:
+    description: Freeze a player
+    usage: /freeze <player>
+    permission: easymod.freeze
+  unfreeze:
+    description: Unfreeze a player
+    usage: /unfreeze <player>
+    permission: easymod.freeze
+
+permissions:
+  easymod.kick:
+    description: Allows kicking players
+    default: op
+  easymod.ban:
+    description: Allows banning players
+    default: op
+  easymod.tempban:
+    description: Allows temporary banning players
+    default: op
+  easymod.mute:
+    description: Allows muting players
+    default: op
+  easymod.unmute:
+    description: Allows unmuting players
+    default: op
+  easymod.warn:
+    description: Allows warning players
+    default: op
+  easymod.freeze:
+    description: Allows freezing/unfreezing players
+    default: op 
